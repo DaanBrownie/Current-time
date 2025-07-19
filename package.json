@@ -1,0 +1,65 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "current-time",
+  "title": "current-time",
+  "description": "Current Time Raycast Extension ",
+  "icon": "icon.png",
+  "author": "DaanBrownie",
+  "categories": [
+    "Developer Tools",
+    "Productivity"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "current-time",
+      "title": "Current Time",
+      "description": "Current Time ",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "showDate",
+      "type": "checkbox",
+      "title": "Show Date",
+      "default": true
+    },
+    {
+      "name": "use12HourClock",
+      "type": "checkbox",
+      "title": "Use 12-Hour Clock",
+      "default": false
+    }
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaanBrownie/current-time.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DaanBrownie/current-time/issues"
+  },
+  "homepage": "https://github.com/DaanBrownie/current-time#readme",
+  "dependencies": {
+    "@raycast/api": "^1.100.3",
+    "@raycast/eslint-config": "^2.0.4",
+    "@raycast/utils": "^2.2.0",
+    "dayjs": "^1.11.13",
+    "eslint": "^9.30.1",
+    "prettier": "^3.6.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "title-case": "^4.3.2",
+    "typescript": "^5.8.3"
+  }
+}
